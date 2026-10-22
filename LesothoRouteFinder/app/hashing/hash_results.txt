@@ -1,0 +1,180 @@
+<<<<<<< HEAD:app/hashing/hash_results.txt
+PASS: new list is empty
+PASS: list inserts and finds a value
+PASS: list rejects duplicate
+PASS: list deep copy is independent
+PASS: list self-assignment
+PASS: list removes head, middle, last and missing values
+PASS: open hashing chains 10, 21 and 32 in bucket 10
+PASS: open hashing removes one collision and keeps others
+PASS: open hashing handles negative keys
+Rehash: closed table capacity 5 -> 11
+PASS: closed hashing resolves collisions and rejects duplicate
+PASS: deleted slot preserves searches and can be reused
+Rehash: closed table capacity 11 -> 23
+Rehash: closed table capacity 23 -> 47
+PASS: closed hashing rehashes while retaining values and load <= 0.5
+Test summary: 0 failure(s)
+
+--- Existing output-folder log ---
+Open hashing: Inserted 1234567
+Open hashing: Inserted 87654321
+
+=== Saved open hashing table ===
+Open hashing (separate chaining)
+Capacity: 11  Values: 1  Load factor: 0.09
+[0]: (empty)
+[1]: (empty)
+[2]: (empty)
+[3]: (empty)
+[4]: (empty)
+[5]: (empty)
+[6]: (empty)
+[7]: 87654321
+[8]: (empty)
+[9]: (empty)
+[10]: (empty)
+Open hashing: Inserted 0
+Open hashing: Not found 1Hash: 10 % 11 = 10
+Inspect bucket 10
+Inserted 10 into the chain
+Hash: 21 % 11 = 10
+Inspect bucket 10
+Collision: open hashing adds this value to the bucket chain
+Inserted 21 into the chain
+Hash: 10 % 11 = 10
+Inspect slot 10
+Inserted 10 at slot 10
+Hash: 21 % 11 = 10
+Inspect slot 10
+Collision; probe next slot
+Inspect slot 0
+Inserted 21 at slot 0
+Hash: 10 % 11 = 10
+Inspect bucket 10
+Inserted 10 into the chain
+Hash: 22 % 11 = 0
+Inspect bucket 0
+Inserted 22 into the chain
+Hash: 10 % 11 = 10
+Inspect bucket 10
+Inserted 10 into the chain
+Hash: 21 % 11 = 10
+Inspect bucket 10
+Collision: open hashing adds this value to the bucket chain
+Inserted 21 into the chain
+Hash: 10 % 11 = 10
+Inspect slot 10
+Inserted 10 at slot 10
+Hash: 21 % 11 = 10
+Inspect slot 10
+Collision; probe next slot
+Inspect slot 0
+Inserted 21 at slot 0
+Hash: 12 % 11 = 1
+Inspect bucket 1
+Inserted 12 into the chain
+Hash: 11 % 11 = 0
+Inspect bucket 0
+Inserted 11 into the chain
+=======
+PASS: new list is empty
+PASS: list inserts and finds a value
+PASS: list rejects duplicate
+PASS: list deep copy is independent
+PASS: list self-assignment
+PASS: list removes head, middle, last and missing values
+PASS: open hashing chains 10, 21 and 32 in bucket 10
+PASS: open hashing removes one collision and keeps others
+PASS: open hashing handles negative keys
+Rehash: closed table capacity 5 -> 11
+PASS: closed hashing resolves collisions and rejects duplicate
+PASS: deleted slot preserves searches and can be reused
+Rehash: closed table capacity 11 -> 23
+Rehash: closed table capacity 23 -> 47
+PASS: closed hashing rehashes while retaining values and load <= 0.5
+Test summary: 0 failure(s)
+
+--- Existing output-folder log ---
+Open hashing: Inserted 1234567
+Open hashing: Inserted 87654321
+
+=== Saved open hashing table ===
+Open hashing (separate chaining)
+Capacity: 11  Values: 1  Load factor: 0.09
+[0]: (empty)
+[1]: (empty)
+[2]: (empty)
+[3]: (empty)
+[4]: (empty)
+[5]: (empty)
+[6]: (empty)
+[7]: 87654321
+[8]: (empty)
+[9]: (empty)
+[10]: (empty)
+Open hashing: Inserted 0
+Open hashing: Not found 1Hash: 10 % 11 = 10
+Inspect bucket 10
+Inserted 10 into the chain
+Hash: 21 % 11 = 10
+Inspect bucket 10
+Collision: open hashing adds this value to the bucket chain
+Inserted 21 into the chain
+Hash: 10 % 11 = 10
+Inspect slot 10
+Inserted 10 at slot 10
+Hash: 21 % 11 = 10
+Inspect slot 10
+Collision; probe next slot
+Inspect slot 0
+Inserted 21 at slot 0
+Hash: 10 % 11 = 10
+Inspect bucket 10
+Inserted 10 into the chain
+Hash: 22 % 11 = 0
+Inspect bucket 0
+Inserted 22 into the chain
+Hash: 10 % 11 = 10
+Inspect bucket 10
+Inserted 10 into the chain
+Hash: 21 % 11 = 10
+Inspect bucket 10
+Collision: open hashing adds this value to the bucket chain
+Inserted 21 into the chain
+Hash: 10 % 11 = 10
+Inspect slot 10
+Inserted 10 at slot 10
+Hash: 21 % 11 = 10
+Inspect slot 10
+Collision; probe next slot
+Inspect slot 0
+Inserted 21 at slot 0
+Hash: 12 % 11 = 1
+Inspect bucket 1
+Inserted 12 into the chain
+Hash: 11 % 11 = 0
+Inspect bucket 0
+Inserted 11 into the chain
+Hash: 12 % 8 = 4
+Inspect bucket 4
+Inserted 12 into the chain
+Hash: 22 % 8 = 6
+Inspect bucket 6
+Inserted 22 into the chain
+Hash: 23 % 8 = 7
+Inspect bucket 7
+Inserted 23 into the chain
+Hash: 24 % 8 = 0
+Inspect bucket 0
+Inserted 24 into the chain
+Hash: 25 % 8 = 1
+Inspect bucket 1
+Inserted 25 into the chain
+Hash: 26 % 8 = 2
+Inspect bucket 2
+Inserted 26 into the chain
+Hash: 22 % 8 = 6
+Inspect bucket 6
+Value found in this chain
+>>>>>>> df05bd3eac4f78e19d0830ecab95b6c228cbe362:hashing/hash_results.txt
